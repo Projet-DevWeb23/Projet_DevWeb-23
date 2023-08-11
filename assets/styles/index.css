@@ -8,9 +8,15 @@
 /* Styles pour le corps de la page */
 body {
     font-family: Arial, sans-serif;
-   /* background-color: #f7f7f7;*/
-    background-image: url("../image/im15.jpg");
+    margin: 0; 
+    padding: 0; 
+    background-image: url("/assets/image/im15.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;  
 }
+
 
 /* Styles pour l'en-tête */
 header {
