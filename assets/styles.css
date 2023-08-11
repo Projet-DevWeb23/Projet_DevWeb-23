@@ -94,10 +94,13 @@ main {
 
 /* Styles pour le pied de page */
 footer {
+    position: absolute; /* Position absolue par rapport au corps */
+    bottom: 0; /* Place le footer en bas */
+    width: 100%; /* Largeur de 100% */
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 50px;
 }
 
 footer small {
