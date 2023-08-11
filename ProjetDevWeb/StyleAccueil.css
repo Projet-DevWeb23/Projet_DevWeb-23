@@ -54,10 +54,13 @@ button{
 }
 
 .image-milieu{
-    margin: 20px 40px;
+    margin: 20px 90px;
     text-align: center;
 }
 
+.image-milieu img{
+    width 100%;
+}
 @keyframes monText{
     from{
         transform: translateX(-400px);
