@@ -7,11 +7,20 @@ body{
 
 .topbar{
     background-color:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     
 }
 .topbar,.header-left{
     display: flex;
     justify-content: space-between;
+}
+
+.header-left{
+    float: left;
 }
 
 .logo{
@@ -20,13 +29,18 @@ body{
 
 .connexion{
     margin: 15px 70px 15px 0;
+    float: right;
 }
 
 button{
     border-radius: 7px;
     background-color: white;
     margin-right:20px ;
+    width:120px;
+    height: 30px;
 }
+
+
 
 .nom-site{
     font-size: 20px;
@@ -36,6 +50,7 @@ button{
 .info{
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 .recherche{
@@ -59,8 +74,9 @@ button{
 }
 
 .image-milieu img{
-    width 100%;
+    width: 100%;
 }
+
 @keyframes monText{
     from{
         transform: translateX(-400px);
@@ -71,3 +87,87 @@ button{
         opacity: 1;
     }
 }
+
+.temoignage-title{
+    margin-left: 90px;
+    color: white;
+}
+
+hr{
+    width: 80%;
+}
+
+
+.temoigneur{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 90px;
+}
+
+.pourTout{
+    width: 300px;
+    height: 200px;
+    background-color:#4D5874;
+    border: 1px solid;
+    border-radius: 15px;
+    
+}
+
+.button-vp{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 65px;
+    background-color:#4D5874;
+    color: white;
+}
+
+.button-vp:hover{
+    height: 72px;
+    width: 72px;
+
+}
+
+.photo-temoigneur, .nom-temoigneur{
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+.photo-temoigneur img{
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.avis{
+    text-align: center;
+    color: white;
+}
+
+.apropos{
+    margin-left: 110px;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pt{
+    font-size: 11px;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: white;
+}
+
+.pm{
+    color: #597CF6;
+    font-size: 11px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.forH3{
+    font-family: sans-serif;
+    color: white;
+}
+
