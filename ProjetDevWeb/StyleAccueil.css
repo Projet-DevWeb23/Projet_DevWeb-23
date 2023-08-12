@@ -53,12 +53,32 @@ button{
     margin-top: 100px;
 }
 
-.recherche{
-    height: max-content;
-    margin: 50px 180px 0 0;
-    border-radius: 5px;
-    width: 200px;
-}
+
+.recherche-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .recherche {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 300px;
+  }
+  
+  .bouton-recherche {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .bouton-recherche:hover {
+    background-color: #0056b3;
+  }
+  
 
 .first-text{
     margin: 20px 0 20px 90px;
@@ -76,6 +96,50 @@ button{
 .image-milieu img{
     width: 100%;
 }
+.recherche-container {
+    display: flex;
+    align-items: center;
+    margin-right: 79px; 
+}
+  
+.recherche {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 500px;
+}
+  
+.bouton-recherche {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+  
+.bouton-recherche:hover {
+    background-color: #0056b3;
+}
+  
+  
+.first-text {
+    margin: 20px 0 20px 90px;
+    color: white;
+    font-size: 32px;
+    transition: 1s;
+    animation: monText 5s;
+}
+  
+.image-milieu {
+    margin: 20px 90px;
+    text-align: center;
+}
+  
+.image-milieu img {
+    width: 100%;
+}
+  
 
 @keyframes monText{
     from{
