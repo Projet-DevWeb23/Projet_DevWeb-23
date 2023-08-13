@@ -93,6 +93,21 @@ button{
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: white;
+}
+
+a:hover{
+    color: #0056b3;
+    transition: .5s;
+}
+
 .image-milieu img{
     width: 100%;
 }
@@ -217,16 +232,10 @@ hr{
     justify-content: space-around;
 }
 
-.pt{
-    font-size: 11px;
-    font-weight: 100;
-    font-family: sans-serif;
-    color: white;
-}
 
 .pm{
     color: #597CF6;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 100;
     font-family: sans-serif;
 }
