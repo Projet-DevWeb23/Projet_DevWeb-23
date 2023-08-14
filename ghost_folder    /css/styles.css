@@ -1,0 +1,292 @@
+/* styles.css */
+
+/* Styles for the header */
+.topbar {
+    font-size: 16px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    z-index: 1000; /* Pour s'assurer que le header reste au-dessus du contenu */
+    color: white;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    font-size: 50px;
+}
+
+.nom-site{
+    color: white;
+    font-size: 50px;
+}
+
+
+.main-content {
+    margin-top: 8%; /* Assurez-vous que le contenu n'est pas caché par le header */
+    padding-bottom: 8%;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    box-sizing: border-box;
+    background-color: #e9e9ee;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+.logo {
+    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.connexion button, .action-button {
+    font-size: 16px;
+    padding: 22px 16px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+.connexion button:hover, .action-button:hover {
+    background-color: #999;
+}
+
+
+
+/* Styles for the main content */
+.buttons {
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer horizontalement */
+    text-align: center; /* Centrer le contenu texte */
+    padding: 40px 0; /* Ajouter de l'espace autour du contenu */
+}
+
+.first-text {
+    text-align: center; 
+    font-size: 54px; 
+    margin: 120px;
+    margin-left: 1550px;
+    color: white;
+}
+
+.recherche {
+    width: 1400px;
+    height: 90px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+
+.bouton-recherche {
+    font-size: 16px;
+    padding: 20px 16px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+.bouton-recherche:hover{
+    background-color: #999;
+}
+
+
+.recherche::placeholder {
+    color: #555; 
+    font-size: 26px; 
+}
+
+.image-milieu {
+    margin: 16%;
+    width: 1200px;
+    text-align: center;
+}
+
+.image-milieu img {
+    width: 200%; /* Utilisation d'unités relatives pour la largeur de l'image */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+}
+  
+.info {
+    padding-top: 30%;
+    display: flex;
+    background: #b8b6b61c url(../images/bg-home.jpg) no-repeat bottom center;
+    min-height: 400px;
+    min-width: 100%;
+    position: relative;
+    background-blend-mode: Darken;
+    padding: 300px 0 0px 0;
+    background-position: center center;
+    background-color: #00924561 !important;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes monText{
+    from{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.temoignage-title, .cal{
+    margin-left: 90px;
+    color: black;
+}
+
+hr{
+    width: 80%;
+}
+
+
+.temoigneur{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 100px;
+    font-size: 30px;
+}
+
+.pourTout{
+    width: 400px;
+    height: 300px;
+    background-color:#4D5874;
+    border: 1px solid;
+    border-radius: 15px;
+    
+}
+
+/* Ajoutez ce style à votre fichier styles.css */
+
+.button-vp{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 65px;
+    background-color:#4D5874;
+    color: black;
+}
+
+.button-vp:hover{
+    height: 72px;
+    width: 72px;
+
+}
+
+.photo-temoigneur, .nom-temoigneur{
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+
+.photo-temoigneur img{
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.avis{
+    text-align: center;
+    color: black;
+}
+/* Styles for the footer */
+/* Styles for the footer */
+footer {
+    font-size: 30px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Utilisation d'unités relatives */
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Additional styles for footer sections */
+.apropos,
+.speciality,
+.contct {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .foot {
+        flex-direction: column;
+    }
+}
+
+
+.foot-ins-con {
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Utilisation d'unités relatives */
+}
+
+.head-con{
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+
+.first-text {
+    text-align: center;
+    font-size: 54px; 
+    margin: 0;
+}
