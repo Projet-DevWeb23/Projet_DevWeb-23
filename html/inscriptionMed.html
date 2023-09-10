@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/inscriptionMED.css"> <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Formulaire d'Inscription</title> <!-- Titre de la page -->
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <img class="logo" src="../images/doc.jpg" alt="logoSite" width="10%"> <!-- Logo du site -->
+            <p class="nom-site">MyDoctor</p> <!-- Nom du site -->
+        </div>
+        <nav class="connexion">
+            <!-- Boutons de navigation pour l'inscription et la connexion -->
+            <button><a href="inscriptionMed.html" class="action-button">je suis médecin</a></button>
+            <button><a href="inscriptionPAT.html" class="action-button">je suis patient</a></button>
+            <button><a href="connexion.html" class="action-button">se connecter</a></button>
+        </nav>
+    </header>
+
+
+    <main class="contenu">
+        <div class="form-inscription">
+            <form >
+                <h2>Inscription</h2> <!-- Titre du formulaire d'inscription -->
+                <div class="form-group">
+                    <div class="form-group1">
+                        <!-- Champ de saisie pour le nom, le numéro professionnel, l'email et le mot de passe -->
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required>
+    
+                        <label for="phone_number">Numero professionnel </label>
+                        <input type="tel" name="telephone" id="phone_number" pattern="7[0-9]{8}" required>
+    
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+    
+                        <label for="password">Mot de passe </label>
+                        <input type="password" name="mot_de_passe" id="password" required>
+                    </div>
+    
+                    <div class="form-group2">
+                        <!-- Champ de saisie pour le prénom, l'établissement, la spécialité et la confirmation du mot de passe -->
+                        <label for="prenom">Prenom</label>
+                        <input type="text" id="prenom" name="prenom" required>
+    
+                        <label for="Établissement">Établissement</label>
+                        <input type="Établissement" name="Établissement" id="Établissement">
+    
+                        <label for="spécialité">Spécialité</label>
+                        <input type="spécialité" name="spécialité" id="spécialité">
+    
+                        <label for="password_confirm">Confirmer Mot de passe </label>
+                        <input type="password" name="confirmation_mdp" id="password_confirm" required>
+                    </div>
+                </div>
+    
+                <div class="cocher">
+                    <!-- Case à cocher pour accepter les conditions générales d'utilisation -->
+                    <div>
+                        <input type="checkbox" name="CGU" id="acceptCGU" required>
+                    </div>
+    
+                    <div>
+                        <label for="acceptCGU"><p>J'ai lu et j'accepte les <a href="#"> conditions générales d'utilisations</a>.</p></label>
+                    </div>
+                </div>
+            
+                <div class="button-ins">
+                    <input type="submit" name="valider" id="valider" value="Faire ma demande"> <!-- Bouton de soumission du formulaire -->
+                </div>
+    
+                <span class="compte">
+                    <a href="./se_connecter.html">J'ai déjà un compte.</a> <!-- Lien vers la page de connexion -->
+                </span>
+                <br>
+                <span class="est_patient">
+                    <a href="./inscription_client.html">S'inscrire en tant que patient</a> <!-- Lien vers l'inscription en tant que patient -->
+                </span>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Informations de copyright -->
+        <p>&copy; 2023 Service de Réservation de RDV en Ligne</p>
+        <!-- Sections du pied de page -->
+        <div class="contenu-footer">
+            <!-- Section "À propos de MyDoctor" -->
+            <div class="apropos">
+                <h3 class="forH3 resume">A propos de MyDoctor</h3>
+                <p class="pt">Accueil</p>
+                <p class="pt">Conditions générales d'utilisation</p>
+                <p class="pt">Politique de confidentialité</p>
+                <p class="pt">FAQ</p>
+            </div>
+            <!-- Section "Trouver un spécialiste" -->
+            <div class="speciality">
+                <h3 class="forH3 resume">Trouver un spécialiste</h3>
+                <p class="pt">Cardiologue</p>
+                <p class="pt">Dentiste</p>
+                <p class="pt">Psychiatre</p>
+                <p class="pt">Dermatologue</p>
+            </div>
+            <!-- Section "Nous contacter" -->
+            <div class="contact">
+                <h3 class="forH3 resume">Nous contacter</h3>
+                <p class="pm"><strong>Email:</strong> mydoctor@yahoo.fr</p>
+                <p class="pm"><strong>Service Client:</strong> 77 000 00 00</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

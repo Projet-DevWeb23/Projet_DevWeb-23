@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- En-tête de la page -->
+    <meta charset="UTF-8">
+    <title>Espace Medecin</title>
+    <!-- Lien vers la feuille de styles Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Lien vers la feuille de styles personnalisée -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <!-- Partie gauche du haut de la page avec le logo et le nom du site -->
+        <div class="header-left">
+            <img class="logo" src="../../images/doc.jpg" alt="logoSite">
+            <p class="nom-site">MyDoctor</p>
+        </div>
+
+        <!-- Partie droite du haut de la page avec l'icône de profil -->
+        <div class="header-right">
+            <nav class="profile-icon">
+                <a href="../../profil/html/profil.html">
+                    <i class="fa-regular fa-user" id="profile-icon"></i>
+                </a>/
+                <a class="dec" href="../../html/connexion.html">Deconnexion</a>
+
+            </nav>
+        </div>
+    </header>
+    <!-- Section principale de contenu-->
+    <main class="container-top">
+        <!-- Section du tableau de bord -->
+        <section class="container-tab" id="menu-section">
+            <div class="tab-board">
+                <p><strong>TABLEAU DE BORD</strong></p>
+            </div>
+        </section>
+        <!-- Barre de navigation latérale -->
+        <div class="nav-item">
+            <!-- Option 1 : Gestionnaire de disponibilité -->
+            <nav class="nav-item1">
+                <i class="fas fa-calendar-alt" id="availability-icon"></i>
+                <p>Gestionnaire de disponibilité</p>
+            </nav>
+            <!-- Option 2 : Gestionnaire des réservations -->
+            <nav class="nav-item2">
+                <i class="fas fa-calendar-check" id="reservations-icon"></i>
+                <p>Gestionnaire des réservations</p>
+            </nav>
+            <!-- Option 3 : Notifications -->
+            <nav class="nav-item3">
+                <i class="fas fa-bell" id="notification-icon"></i>
+                <p>Notifications</p>
+            </nav>
+            <!-- Option 4 : Statistiques -->
+            <nav class="nav-item4">
+                <i class="fas fa-chart-bar" id="statistics-icon"></i>
+                <p>Statistiques</p>
+            </nav>
+            <!-- Option 5 : Rapports -->
+            <nav class="nav-item5">
+                <i class="fas fa-file-alt" id="reports-icon"></i>
+                <p>Rapports</p>
+            </nav>
+        </div>
+
+        <!-- Contenu principal dynamique -->
+        <div class="content">
+            <!-- Section : Gestionnaire de disponibilité -->
+            <section class="container-av" id="availability-section">
+                Contenu du gestionnaire de disponibilité
+            </section>
+            <!-- Section : Gestionnaire des réservations -->
+            <section class="container-res" id="reservations-section">
+                Contenu du gestionnaire des réservations
+            </section>
+            <!-- Section : Notifications -->
+            <section class="container-not" id="notification-section">
+                Contenu des notifications
+            </section>
+            <!-- Section : Statistiques -->
+            <section class="container-stat" id="statistics-section">
+                Contenu des statistiques
+            </section>
+            <!-- Section : Rapports -->
+            <section class="container-rep" id="reports-section">
+                Contenu des rapports
+            </section>
+        </div>
+    </main>
+
+    <!--Pied de page -->
+    <footer>
+        <!-- Informations de copyright -->
+        <p>&copy; 2023 Service de Réservation de RDV en Ligne</p>
+        <!-- Sections du pied de page -->
+        <div class="contenu-footer">
+            <!-- Section "À propos de MyDoctor" -->
+            <div class="apropos">
+                <h3 class="forH3 resume">A propos de MyDoctor</h3>
+                <p class="pt">Accueil</p>
+                <p class="pt">Conditions générales d'utilisation</p>
+                <p class="pt">Politique de confidentialité</p>
+                <p class="pt">FAQ</p>
+            </div>
+            <!-- Section "Trouver un spécialiste" -->
+            <div class="speciality">
+                <h3 class="forH3 resume">Trouver un spécialiste</h3>
+                <p class="pt">Cardiologue</p>
+                <p class="pt">Dentiste</p>
+                <p class="pt">Psychiatre</p>
+                <p class="pt">Dermatologue</p>
+            </div>
+            <!-- Section "Nous contacter" -->
+            <div class="contact">
+                <h3 class="forH3 resume">Nous contacter</h3>
+                <p class="pm"><strong>Email:</strong> mydoctor@yahoo.fr</p>
+                <p class="pm"><strong>Service Client:</strong> 77 000 00 00</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Script JavaScript -->
+    <script src="../javacript/script.js"></script>
+</body>
+
+</html>

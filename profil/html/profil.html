@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Profil - Médecin</title> <!-- Titre de la page -->
+    <link rel="stylesheet" href="../css/profil.css"> <!-- Lien vers la feuille de style CSS -->
+</head>
+<body>
+        <header>
+            <div class="header-left">
+                <img class="logo" src="../../images/doc.jpg" alt="logoSite" width="10%"> <!-- Logo du site -->
+                <p class="nom-site">MyDoctor</p> <!-- Nom du site -->
+            </div>
+        </header>
+    <main class="contenu">
+        <section id="profile-info">
+            <div class="profile-image">
+                <!-- Image de profil -->
+                <img src="../../images/j-essaye-etre-meilleur-docteur.jpg" alt="Photo de Profil">
+                <!-- Bouton pour changer la photo de profil -->
+                <input type="file" id="changer-photo" name="changer-photo" accept="../images/*">
+            </div>
+             
+            <div class="profile-details">
+                <!-- Formulaire pour les informations personnelles -->
+                <form>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" value="Dr. Jean Dupont" readonly> <!-- Champ de saisie pour le nom (en lecture seule) -->
+                
+                    <label for="specialite">Spécialité</label>
+                    <input type="text" id="specialite" name="specialite" value="Cardiologue" readonly> <!-- Champ de saisie pour la spécialité (en lecture seule) -->
+                
+                    <label for="etablissement">Établissement</label>
+                    <input type="text" id="etablissement" name="etablissement" value="Centre hospitalié paris rue 13" readonly> <!-- Champ de saisie pour l'établissement (en lecture seule) -->    
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="jean.dupont@example.com"> <!-- Champ de saisie pour l'email -->
+                
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" value="01 23 45 67 89"> <!-- Champ de saisie pour le téléphone -->
+                
+                    <button type="submit" class="submit">Enregistrer les modifications</button> <!-- Bouton de soumission du formulaire -->
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Informations de copyright -->
+        <p>&copy; 2023 Service de Réservation de RDV en Ligne</p>
+        <!-- Sections du pied de page -->
+        <div class="contenu-footer">
+            <!-- Section "À propos de MyDoctor" -->
+            <div class="apropos">
+                <h3 class="forH3 resume">A propos de MyDoctor</h3>
+                <p class="pt">Accueil</p>
+                <p class="pt">Conditions générales d'utilisation</p>
+                <p class="pt">Politique de confidentialité</p>
+                <p class="pt">FAQ</p>
+                <p><a href="../..//espace_Med/HTML/index.html">Retour à la page principale</a></p> <!-- Lien de retour à la page principale -->
+            </div>
+            <!-- Section "Trouver un spécialiste" -->
+            <div class="speciality">
+                <h3 class="forH3 resume">Trouver un spécialiste</h3>
+                <p class="pt">Cardiologue</p>
+                <p class="pt">Dentiste</p>
+                <p class="pt">Psychiatre</p>
+                <p class="pt">Dermatologue</p>
+            </div>
+            <!-- Section "Nous contacter" -->
+            <div class="contact">
+                <h3 class="forH3 resume">Nous contacter</h3>
+                <p class="pm"><strong>Email:</strong> mydoctor@yahoo.fr</p>
+                <p class="pm"><strong>Service Client:</strong> 77 000 00 00</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

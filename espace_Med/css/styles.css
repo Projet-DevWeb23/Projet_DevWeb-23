@@ -1,0 +1,207 @@
+/* Styles for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Réinitialisation des marges et des rembourrages par défaut */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    background-image: url("../../images/backgroundimg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Ajustez la taille du logo et du nom du site */
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.nom-site {
+    font-size: 24px;
+    margin-left: 2%;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 60%;
+}
+
+/* Styles for the profile icon */
+.profile-icon {
+    font-size: 24px;
+    color: #555;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.profile-icon a{
+    text-decoration: none;
+    color: #333;
+}
+
+.dec{
+    font-size: 15px;
+}
+
+.container-top {
+    border-collapse: collapse;
+}
+
+.tab-board {
+    background-color: rgb(17, 97, 194);
+    border-radius: 18px;
+    padding: 1%;
+}
+
+.container-tab {
+    background-color: rgb(81, 162, 31);
+    font-size: 20px;
+    text-align: center;
+    height: 100%;
+    padding: 1%;
+}
+
+/* Navigation section */
+.nav-item {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.nav-item nav {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+.nav-item nav:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-item i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Ajustez les marges pour les éléments de navigation */
+.nav-item1,
+.nav-item2,
+.nav-item3,
+.nav-item4,
+.nav-item5,
+.nav-item6 {
+    display: flex; /* Utilisation du modèle de flexbox */
+    align-items: center; /* Aligner verticalement l'icône et le texte */
+    cursor: pointer;
+    width: 30%;
+    background-color: #f1eaea;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.nav-item p {
+    margin-left: 10px;
+}
+
+/* Ajustez la largeur et les marges des conteneurs */
+.container-av,
+.container-res,
+.container-not,
+.container-stat,
+.container-rep,
+.container-prof {
+    background-color: #f0ebeb;
+    margin: 1% auto;
+    border-radius: 20px;
+    height: 28vh;
+    text-align: center;
+}
+
+/* Content sections */
+.content section {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Styles for the footer */
+footer {
+    font-size: 16px;
+    background-color: rgb(81, 162, 31);
+    text-align: center;
+    padding-top: auto;
+    margin-top: auto; /* Pousse le footer vers le bas de la page */
+}
+
+.contenu-footer {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: 15%;
+}
+
+.apropos,
+.speciality,
+.contact {
+    width: 33.33%;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    .container-top {
+        flex-direction: column;
+    }
+    
+    .nav-item {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .nav-item nav {
+        width: calc(50% - 10px);
+    }
+    
+    .container-av,
+    .container-res,
+    .container-not,
+    .container-stat,
+    .container-rep,
+    .container-prof {
+        padding: 10px;
+    }
+}

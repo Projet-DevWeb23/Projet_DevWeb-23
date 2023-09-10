@@ -1,0 +1,185 @@
+/* Réinitialisation des styles de base et configuration générale de la page */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* La hauteur de la page est définie sur 100% de la hauteur de la fenêtre */
+    font-family: Arial, sans-serif; /* Police de caractères par défaut */
+    background-image: url("../images/backgroundimg.jpeg"); /* Image d'arrière-plan */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    background-size: cover; /* Ajuster l'image pour couvrir tout l'arrière-plan */
+    display: flex; /* Utilisation du modèle de boîte flexible */
+    flex-direction: column; /* Contenu disposé en colonne */
+    font-size: 16px; /* Taille de police par défaut */
+}
+
+/* Styles pour l'en-tête de la page */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère sous l'en-tête */
+}
+
+/* Logo de la page */
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+/* Nom du site dans l'en-tête */
+.nom-site {
+    font-size: 24px;
+    margin-left: 2%;
+}
+
+/* Section de gauche de l'en-tête */
+.header-left {
+    display: flex;
+}
+
+/* Section de droite de l'en-tête */
+.header-right {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 75%; /* Marge à gauche pour l'élément de droite */
+}
+
+/* Styles pour les boutons de connexion et d'action */
+.connexion button,
+.action-button {
+    font-size: 16px;
+    padding: 10px 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/* Styles au survol des boutons */
+.connexion button:hover,
+.action-button:hover {
+    background-color: #999;
+}
+
+
+/* Styles pour le formulaire d'inscription */
+.form-inscription {
+    background-color: rgba(255, 255, 255, 0.7); /* Arrière-plan semi-transparent */
+    border-radius: 8px;
+    margin: 4% auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    padding: 0 4%;
+    width: 50%;
+    font-size: 20px;
+}
+
+/* Styles pour les groupes de formulaire */
+.form-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les champs de formulaire */
+.form-group1 {
+    width: 50%;
+    margin-right: 50px;
+}
+
+.form-group2 {
+    width: 50%;
+    margin-left: 10%;
+}
+
+/* Style pour les titres du formulaire */
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style pour les étiquettes des champs de formulaire */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styles pour les champs de texte du formulaire */
+input {
+    justify-items: center;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Style pour le bouton de soumission du formulaire */
+button[type="submit"] {
+    background-color: #999;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Style au survol du bouton de soumission du formulaire */
+button:hover {
+    background-color: #999;
+}
+
+/* Styles pour la section de vérification */
+.cocher {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.compte {
+    font-size: 15px;
+}
+
+.est_patient {
+    margin-left: 84.5%; /* Déplacement vers la droite */
+    font-size: 15px;
+}
+
+/* Styles pour le bouton d'inscription */
+.button-ins {
+    display: flex;
+}
+
+input[type="submit"] {
+    margin: 0 30%;
+}
+
+/* Styles pour le pied de page */
+footer {
+    font-size: 16px;
+    background-color: rgb(81, 162, 31);
+    text-align: center;
+    padding-top: auto;
+    margin-top: auto; /* Pousse le footer vers le bas de la page */
+}
+
+.contenu-footer {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: 15%;
+}
+
+.apropos,
+.speciality,
+.contact {
+    width: 33.33%;
+    text-align: justify;
+}
