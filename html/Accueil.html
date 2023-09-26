@@ -1,0 +1,79 @@
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="../css/StyleAccueil.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="header-left">
+            <a href="Accueil.html" class="link-logo"><img class="logo" src="../images/doc.jpg" alt="logoSite" title="revenir à l'accueil" width="50" height="50"/></a>
+            <p class="nom-site">MyDoctor</p>
+        </div>
+        <form id="connexion" class="connexion">
+            <button class="button-inscription">je suis patient</button>
+            <button form="connexion" formaction="inscription_med.html" class="button-inscription">je suis médecin</button>
+            <button class="button-connexion" form="connexion" formaction="connexion.html" type="submit">Se connecter</button>
+        </form>
+    </header>
+    <main class="container-main">
+        <div class="info">
+            <p class="first-text">Trouvez un professionnel de santé <br>et prenez rendez-vous en ligne <br> Rapide,  gratuit et sécurisé</p>
+            <div class="recherche-container">
+                <input class="recherche" type="text" placeholder="Rechercher une spécialité">
+                <button class="bouton-recherche" title="rechercher">Rechercher</button>
+            </div>    
+        </div>
+        <p class="image-milieu"><img src="../images/medecin1.jpg" alt="image du milieu" width="900" height="300"></p>
+        <section class="temoignages">
+            <h2 class="temoignage-title">Témoignages & Avis</h2>
+            <hr>
+            <div class="temoigneur">
+                <div class="pourTout temoigneur1">
+                    <p class="photo-temoigneur"><img src="../images/cheikh.JPEG" alt="photo de celeui qui temoigne" width="60" height="60"></p>
+                    <p class="nom-temoigneur">Cheikh Laye Dia</p>
+                    <p class="avis">"ce site c'est du plus grand n'importe quoi"</p>
+                </div>
+                <div class="pourTout temoigneur2">
+                    <p class="photo-temoigneur"><img src="../images/cheikh.JPEG" alt="photo de celeui qui temoigne" width="60" height="60"></p>
+                    <p class="nom-temoigneur">Cheikh Laye Dia</p>
+                    <p class="avis">"ce site c'est du plus grand n'importe quoi"</p>
+                </div>
+                <div class="pourTout temoigneur3">
+                    <p class="photo-temoigneur"><img src="../images/cheikh.JPEG" alt="photo de celeui qui temoigne" width="60" height="60"></p>
+                    <p class="nom-temoigneur">Cheikh Laye Dia</p>
+                    <p class="avis">"ce site c'est du plus grand n'importe quoi"</p>
+                </div>
+                
+               <input type="submit" class="button-vp" value="voir plus">
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer class="foot">
+        <p class="foot-text">© 2023 Service de Réservation de RDV en ligne</p>
+        <div class="foot-container">
+            <div class="apropos">
+                <h3 class="forH3 resume">A propos de MyDoctor</h3>
+                <a href="Accueil.html" class="pt">Accueil</a>
+                <a href="#" class="pt">Conditions générales d'utilisation</a>
+                <a href="#" class="pt">Politique de confidentialité</a>
+                <a href="#" class="pt">FAQ</a>
+            </div>
+            <div class="speciality">
+                <h3 class="forH3 resume">Trouver un spécialiste</h3>
+                <a href="#" class="pt">Cardialogue</a>
+                <a href="#" class="pt">Dentiste</a>
+                <a href="#" class="pt">Psychiatre</a>
+                <a href="#" class="pt">Dermatologue</a>
+            </div>
+            <div class="contct">
+                <h3 class="forH3 resume">Nous contacter</h3>
+                <p class="pm"><strong>Email:</strong> mydoctor@yahoo.fr</p>
+                <p class="pm"><strong>Service Client:</strong> 77 000 00 00</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
