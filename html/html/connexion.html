@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page de connexion</title>
+    <link rel="stylesheet" href="../css/StyleAccueil.css">
+    <link rel="stylesheet" href="../css/StyleConnexion.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="header-left">
+            <a href="Accueil.html" class="link-logo"><img class="logo" src="../images/doc.jpg" alt="logoSite" width="50" height="50"></a>
+            <p class="nom-site">MyDoctor</p>
+        </div>
+        <nav class="connexion">
+            <button class="button-inscription">S'inscrire</button>
+            <button class="button-connexion">Se connecter</button>
+        </nav>
+    </header>
+    <main class="container-main">
+        <div class="retour">
+            <a href="Accueil.html" class="retour-link" title="Retour à l'accueil"><img src="../images/retour.png" alt="retour à l'accueil"></a>
+            <p class="retour-text"><a href="Accueil.html" title="Retour à l'accueil">Revenir à l'accueil</a></p>
+            <p class="connexion-text">Connexion</p>
+        </div>
+        <form id="connexion" action="mailto:adresse@mail.org" method="post" name="connexion">
+            <label for="identifiat">Email / Téléphone</label>
+            <input type="text" id="identifiant"  name="identifiant" placeholder="Votre email ou numéro de téléphone">
+            <label for="mdp">Mot de passe</label>
+            <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe">
+            <p class="forget-mdp"><a href="#" >Mot de passe oublié ?</a></p>
+            <button  autofocus>Se connecter</button>
+            <p class="sign">Vous n'avez pas de compte? <a href="#">S'inscrire</a></p>
+        </form>
+    </main>
+    <footer class="foot">
+        <p class="foot-text">© 2023 Service de Réservation de RDV en ligne</p>
+        <div class="foot-container">
+            <div class="apropos">
+                <h3 class="forH3 resume">A propos de MyDoctor</h3>
+                <a href="Accueil.html" class="pt">Accueil</a>
+                <a href="#" class="pt">Conditions générales d'utilisation</a>
+                <a href="#" class="pt">Politique de confidentialité</a>
+                <a href="#" class="pt">FAQ</a>
+            </div>
+            <div class="speciality">
+                <h3 class="forH3 resume">Trouver un spécialiste</h3>
+                <a href="#" class="pt">Cardialogue</a>
+                <a href="#" class="pt">Dentiste</a>
+                <a href="#" class="pt">Psychiatre</a>
+                <a href="#" class="pt">Dermatologue</a>
+            </div>
+            <div class="contct">
+                <h3 class="forH3 resume">Nous contacter</h3>
+                <p class="pm"><strong>Email:</strong> mydoctor@yahoo.fr</p>
+                <p class="pm"><strong>Service Client:</strong> 77 000 00 00</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
