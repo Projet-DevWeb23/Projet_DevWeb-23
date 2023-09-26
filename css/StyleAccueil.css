@@ -1,0 +1,241 @@
+*{
+    height: max-content;
+}
+
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+.topbar{ 
+    background-color:white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: #dfe2e7 1px solid;
+    
+}
+.topbar,.header-left{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+    float: left;
+}
+
+.logo{
+    margin: 0 20px;
+}
+
+.link-logo{
+    margin: 0;
+}
+
+.connexion{
+    margin: 15px 70px 15px 0;
+    float: right;
+    height: max-content;
+}
+
+.connexion button{
+    border-radius: 7px;
+    background-color: white;
+    margin-right:40px ;
+    width:130px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.connexion button:hover{
+    color: #ffffff;
+    background-color: #0abe19;
+    border-color: #0ed807;
+}
+
+.nom-site{
+    font-size: 20px;
+    margin-top: 15px;
+    height: max-content;
+}
+
+.container-main{
+    background-color: #ffffff;
+}
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+
+
+.first-text{
+    margin: 0 0 0 90px;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    transition: 1s;
+    animation: monText 5s;
+}
+
+.image-milieu{
+    margin: 20px 90px;
+    text-align: center;
+}
+
+.pt{
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: white;
+}
+
+.pt:hover{
+    color: #ffffff;
+    transition: .5s;
+}
+
+.image-milieu img{
+    width: 100%;
+}
+.recherche-container {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 79px; 
+    align-items: center;
+}
+  
+.recherche {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 300px;
+  }
+  
+.bouton-recherche {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+  
+.bouton-recherche:hover {
+    background-color: #0056b3;
+}
+  
+  
+@keyframes monText{
+    from{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.temoignage-title{
+    margin-left: 90px;
+    color: rgb(0, 0, 0);
+}
+
+hr{
+    width: 80%;
+}
+
+
+.temoigneur{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 90px;
+}
+
+.pourTout{
+    width: 300px;
+    height: 200px;
+    background-color: #fcfcfc;
+    border: 1px solid;
+    border-radius: 15px;
+    
+}
+
+.button-vp{
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 65px;
+    background-color:#ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.button-vp:hover{
+    color: #ffffff;
+    background-color: #2cb809;
+    border-color: #1ac00b;
+
+}
+
+.photo-temoigneur, .nom-temoigneur{
+    text-align: center;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.photo-temoigneur img{
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.avis{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.apropos{
+    margin-left: 110px;
+}
+
+.foot{
+    padding: 20px 0 50px;
+    margin-top: 40px;
+    background-color: #129e0d;
+}
+
+.foot-text{
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.foot-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.pm{
+    color: #fafafa;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.forH3, .pt{
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+}
+

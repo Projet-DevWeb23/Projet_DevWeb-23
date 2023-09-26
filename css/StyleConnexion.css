@@ -1,0 +1,138 @@
+
+
+*{
+    height: max-content;
+    margin: 0;
+}
+
+
+body{
+    background-color: rgb(224, 230, 229);
+}
+
+.topbar{
+    position: fixed;
+    z-index: 5;
+}
+
+
+
+.container-main{
+    height: 500px;
+    margin: 111px 200px 50px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+form label,
+form input{
+    display: block;
+    width: 100%;
+}
+
+form{
+    margin: 107px 300px;
+   position: absolute;
+}
+
+label{
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+input{
+    height: 40px;
+    border-color: beige;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button{
+    margin: 10px 0 0;
+    width: 593px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgb(88, 206, 9);
+    color: rgb(255, 255, 255);
+    border-color: rgb(88, 206, 9);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px black;
+
+}
+
+form button:hover{
+    background-color: #129e0d;
+}
+
+form p{
+    text-align: center;
+    margin: 8px;
+}
+
+.sign a{
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.sign a:hover,
+.forget-mdp a:hover
+{
+    text-decoration: underline;
+    color: rgb(88, 206, 9);
+    animation: .5s;
+}
+
+.retour{
+    position: absolute;
+    margin: 40px 0 0 70px;
+    display: flex;
+    align-items: center;
+}
+
+.retour-link{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.retour-link img:hover{
+    width: 22px;;
+    height: 22px;
+}
+
+.retour-link img{
+    width: 100%;
+}
+
+.retour-text{
+    font-size: 20px;
+}
+
+.retour-text a:hover{
+    color: rgb(88, 206, 9);
+    animation: .5s;
+}
+
+.connexion-text{
+    margin-left: 300px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.forget-mdp{
+    text-align: end;
+}
+.forget-mdp a, .retour-text a{
+    color: black;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.foot{
+    margin-top: 0;
+}

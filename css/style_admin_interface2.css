@@ -1,0 +1,207 @@
+/*Style pour le header*/
+*{
+    height: max-content;
+}
+
+body{
+    margin:0;
+    box-sizing: border-box;
+    
+    background-color: rgba(156, 145, 187, 0.59);
+}
+
+.topbar{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    border-bottom: #dfe2e7 1px solid;
+    z-index: 8;
+}
+
+.topbar,.header-left{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+    float: left;
+}
+
+.logo{
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.link-logo{
+    margin: 0;
+}
+
+.connexion{
+    margin: 15px 70px 15px 0;
+    float: right;
+    height: max-content;
+}
+
+.connexion button{
+    border-radius: 7px;
+    background-color: white;
+    margin-right:40px ;
+    width:130px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.connexion button:hover{
+    color: #ffffff;
+    background-color: #0abe19;
+    border-color: #0ed807;
+}
+
+.nom-site{
+    font-size: 20px;
+    margin-top: 20px;
+    height: max-content;
+    color: #FFF;
+}
+
+.deconnexion /*le logo de connexion/deconnexion en haut à droite*/
+{
+    margin: 15px;
+    size: 100px;
+    height: 40px;
+}
+
+/*style main*/
+main 
+{
+    display: flex; /* Utilisation de flex pour placer les sections côte à côte */
+    
+    background-color:  rgba(0,0, 0, 0.0);
+}
+
+
+/*style section de gauche (tableau de bord)*/
+
+.tableau_de_bord
+{
+    
+    position: fixed;
+    width: 315px;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0.74);
+    padding-top: 60px; /* Permet de décaler le texte "talbeau de bord" autant qu'on veut*/
+    height: 100vh;
+}
+.tableau_de_bord h3
+{
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    display: flex;
+    width: 285px;
+    height: 60px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: #000;
+}
+
+.options_tableau
+{
+    display: flex;
+    width: 270px;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex-shrink: 0;
+    padding-left: 60px;
+    ;
+    
+}
+
+.options_tableau button
+{
+    background: #FFF;
+    color: #000;
+    height: 47px;
+    width: 170px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+.options_tableau button:hover{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.384);
+    border-color: #0ed807;
+    
+}
+
+.options_tableau .actual
+{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-color: #0ed807;  
+}
+
+.centre_droit
+{
+    padding-left: 315px;
+    flex: 1; /* Laissez la deuxième section prendre autant d'espace que possible */
+    justify-content: center; /* Centre le contenu verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    background-color: rgba(0, 0, 0, 0.0);
+    padding-top: 70px;
+    max-height: auto;
+    
+    
+}
+.centre_droit input{
+    border-radius: 20px;
+}
+.centre_droit form{
+    margin: 3px;text-align: end;
+}
+h1{
+    
+}
+.centre_droit .consultation .profile{
+border-radius: 50px;
+height: 50px;
+width: 50px;
+background-image: url(/images/doc.jpg)
+}
+.cont{
+    margin: 10px;
+    font-size: 15px;
+    display:flex;
+}
+p{
+    margin: 10px;
+    text-align:left;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.centre_droit .consultation{
+    
+}

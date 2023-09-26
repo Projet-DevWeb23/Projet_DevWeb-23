@@ -1,0 +1,220 @@
+/*Style pour le header*/
+*{
+    height: max-content;
+}
+
+body{
+    margin:0;
+    box-sizing: border-box;
+    
+    background-color: rgba(167, 163, 181, 0.59);
+}
+
+.topbar{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    border-bottom: #dfe2e7 1px solid;
+    z-index: 8;
+}
+
+.topbar,.header-left{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+    float: left;
+}
+
+.logo{
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.link-logo{
+    margin: 0;
+}
+
+.connexion{
+    margin: 15px 70px 15px 0;
+    float: right;
+    height: max-content;
+}
+
+.connexion button{
+    border-radius: 7px;
+    background-color: white;
+    margin-right:40px ;
+    width:130px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.connexion button:hover{
+    color: #ffffff;
+    background-color: #0abe19;
+    border-color: #0ed807;
+}
+
+.nom-site{
+    font-size: 20px;
+    margin-top: 20px;
+    height: max-content;
+    color: #FFF;
+}
+
+.deconnexion /*le logo de connexion/deconnexion en haut à droite*/
+{
+    margin: 15px;
+    size: 100px;
+    height: 40px;
+}
+
+/*style main*/
+main 
+{
+    display: flex; /* Utilisation de flex pour placer les sections côte à côte */
+    
+    background-color:  rgba(0,0, 0, 0.0);2
+}
+
+
+/*style section de gauche (tableau de bord)*/
+
+.tableau_de_bord
+{
+    
+    position: fixed;
+    width: 315px;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0.74);
+    padding-top: 60px; /* Permet de décaler le texte "talbeau de bord" autant qu'on veut*/
+    height: 100vh;
+}
+.tableau_de_bord h3
+{
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    display: flex;
+    width: 285px;
+    height: 60px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: #000;
+}
+
+.options_tableau
+{
+    display: flex;
+    width: 270px;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex-shrink: 0;
+    padding-left: 60px;
+    ;
+    
+}
+
+.options_tableau button
+{
+    background: #FFF;
+    color: #000;
+    height: 47px;
+    width: 170px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+.options_tableau button:hover{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.384);
+    border-color: #0ed807;
+    
+}
+
+.options_tableau .actual
+{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-color: #0ed807;  
+}
+/*style section de droite (centre droit)*/
+.centre_droit 
+{
+    padding-left: 315px;
+    flex: 1; /* Laissez la deuxième section prendre autant d'espace que possible */
+    display: flex;
+    justify-content: center; /* Centre le contenu verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    background-color: rgba(0, 0, 0, 0.0);
+    padding-top: 70px;
+    max-height: auto;
+    
+}
+
+.liste_medecins
+{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 30px;
+    
+}
+
+.liste_medecins  button
+{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 75px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.29);
+    cursor: pointer;
+}
+
+.liste_medecins button:hover 
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.liste_medecins button h2 
+{
+    font-size: 24px; /* Style du titre H2 */
+    margin: 0; /* Supprime les marges par défaut du navigateur */
+   
+}
+
+.liste_medecins button h4 {
+    font-size: 16px; /* Style du sous-titre H4 */
+    margin: 0; /* Supprime les marges par défaut du navigateur */
+    
+}
